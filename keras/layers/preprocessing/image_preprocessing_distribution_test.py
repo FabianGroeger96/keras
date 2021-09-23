@@ -14,15 +14,13 @@
 # ==============================================================================
 """Distribution tests for keras.layers.preprocessing.image_preprocessing."""
 
-import tensorflow.compat.v2 as tf
-
-import numpy as np
-
 import keras
 from keras import keras_parameterized
 from keras.distribute import strategy_combinations
 from keras.layers.preprocessing import image_preprocessing
 from keras.layers.preprocessing import preprocessing_test_utils
+import numpy as np
+import tensorflow.compat.v2 as tf
 
 
 @tf.__internal__.distribute.combinations.generate(
